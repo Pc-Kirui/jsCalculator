@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #000;
+  --color-secondary: #04724d;
+  --color-gray-1: #586f7c;
+  --color-blue-1: #b8dbd9;
+  --color-blue-2: #000022;
+  --color-silver: #c5c5c5;
+  --color-white: #f4f4f9;
+  --color-fulvous: #e28413;
+}
+
+body {
+  background-color: var(--color-primary);
+  font-family: "Helvetica Neue", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  margin: 0.4rem 0;
+  text-align: center;
+}
+header h2 {
+  color: var(--color-white);
+  position: relative;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 2rem 0;
+}
+header h2 span {
+  color: var(--color-blue-1);
+}
+header h2 .big-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3.5rem;
+  z-index: -1;
+  font-weight: 800;
+  color: var(--color-blue-2);
+  transition: all 0.4s ease-in-out;
+}
+
+.container {
+  background-color: var(--color-secondary);
+  width: 24rem;
+  padding: 8px;
+  border-radius: 8px;
+}
+.container .calc-disp {
+  width: 100%;
+  padding: 1.5rem;
+}
+.container .calc-disp p {
+  text-align: end;
+  color: var(--color-white);
+  font-size: 2.5rem;
+  background: transparent;
+  border: none;
+  outline: none;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.container .calc-keys {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0.5rem 0;
+}
+.container .calc-keys .rows {
+  margin: 0.8rem 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.container .calc-keys .rows button {
+  background: var(--color-silver);
+  width: 60px;
+  height: 60px;
+  border-radius: 20%;
+  border: none;
+  cursor: pointer;
+  color: var(--color-white);
+  font-size: 1.3rem;
+}
+.container .calc-keys .rows .numbers {
+  background-color: var(--color-gray-1);
+}
+.container .calc-keys .rows .operations {
+  background-color: var(--color-blue-2);
+}
+.container .calc-keys .rows .key-zero {
+  width: 128px;
+  border-radius: 10%;
+}
+.container .calc-keys .rows .key-others {
+  background-color: var(--color-fulvous);
+  color: var(--color-blue-2);
+}
+
+footer {
+  padding: 0.6rem;
+}
+footer small {
+  color: var(--color-blue-1);
+  font-size: 1rem;
+}/*# sourceMappingURL=styles.css.map */
