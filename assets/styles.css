@@ -98,6 +98,9 @@ header h2 .big-text {
   color: var(--color-white);
   font-size: 1.3rem;
 }
+.container .calc-keys .rows button:active, .container .calc-keys .rows button:focus {
+  filter: brightness(120%);
+}
 .container .calc-keys .rows .numbers {
   background-color: var(--color-gray-1);
 }

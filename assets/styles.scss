@@ -94,6 +94,10 @@ header {
         cursor: pointer;
         color: var(--color-white);
         font-size: 1.3rem;
+        &:active,
+        &:focus {
+          filter: brightness(120%);
+        }
       }
       .numbers {
         background-color: var(--color-gray-1);
