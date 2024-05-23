@@ -60,16 +60,35 @@ header {
   .calc-disp {
     width: 100%;
     padding: 1.5rem;
-    p {
-      text-align: end;
-      color: var(--color-white);
-      font-size: 2.5rem;
-      background: transparent;
-      border: none;
-      outline: none;
+    // border: 1px solid yellow;
+    height: 75px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    .disp {
       word-wrap: break-word;
       word-break: break-all;
+      color: var(--color-white);
+      outline: none;
+      background: transparent;
     }
+    .previous {
+      font-size: 1.5rem;
+    }
+    .current {
+      font-size: 2.5rem;
+    }
+    // p {
+    //   text-align: end;
+    //   color: var(--color-white);
+    //   font-size: 2.5rem;
+    //   background: transparent;
+    //   border: none;
+    //   outline: none;
+    //   word-wrap: break-word;
+    //   word-break: break-all;
+    // }
   }
   .calc-keys {
     display: flex;
@@ -102,7 +121,8 @@ header {
       .numbers {
         background-color: var(--color-gray-1);
       }
-      .operations {
+      .operations,
+      .equal {
         background-color: var(--color-blue-2);
       }
       .key-zero {
