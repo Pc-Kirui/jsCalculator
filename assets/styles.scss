@@ -118,7 +118,8 @@ header {
           filter: brightness(120%);
         }
       }
-      .numbers {
+      .numbers,
+      .dec-point {
         background-color: var(--color-gray-1);
       }
       .operations,

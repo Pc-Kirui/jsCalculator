@@ -109,7 +109,8 @@ header h2 .big-text {
 .container .calc-keys .rows button:active, .container .calc-keys .rows button:focus {
   filter: brightness(120%);
 }
-.container .calc-keys .rows .numbers {
+.container .calc-keys .rows .numbers,
+.container .calc-keys .rows .dec-point {
   background-color: var(--color-gray-1);
 }
 .container .calc-keys .rows .operations,
