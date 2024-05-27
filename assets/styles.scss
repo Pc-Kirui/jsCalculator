@@ -118,12 +118,10 @@ header {
           filter: brightness(120%);
         }
       }
-      .numbers,
-      .dec-point {
+      .numbers {
         background-color: var(--color-gray-1);
       }
-      .operations,
-      .equal {
+      .operations {
         background-color: var(--color-blue-2);
       }
       .key-zero {
